@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tripl3 Sync</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6f7;
+      color: #222;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px #00000012;
+    }
+
+    h1 {
+      color: #222;
+      margin-top: 0;
+    }
+
+    .subtitle {
+      color: #777;
+      font-size: 13px;
+    }
+
+    .status {
+      padding: 12px;
+      background: #fff4d6;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #222;
+      color: white;
+      border: 0;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .section {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    #message {
+      margin-top: 15px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>TRIPL3 SYNC</h1>
+    <div class="subtitle">
+      Deine Wix-Bestellsynchronisierung
+    </div>
+
+    <div class="status">
+      Verbindung: Noch nicht getestet
+    </div>
+
+    <div class="section">Bestellungen</div>
+    <div class="section">Teilnehmer</div>
+    <div class="section">Bekleidung</div>
+    <div class="section">Campübersicht</div>
+
+    <br>
+
+    <button id="syncButton" disabled>
+      Wix-Bestellungen synchronisieren
+    </button>
+
+    <div id="message">
+      Testversion – Verbindung noch nicht eingerichtet.
+    </div>
+  </div>
+</body>
+</html>
